@@ -1,0 +1,3 @@
+﻿  Kaynak.cpp
+C:\Users\doguk\Desktop\Bastan\bastann\final_hazirlik\Kaynak.cpp(42,8): warning C4244: 'başlatılıyor': 'double' - 'int' dönüşümü; veri kaybı olabilir
+  final_hazirlik.vcxproj -> C:\Users\doguk\Desktop\Bastan\bastann\x64\Debug\final_hazirlik.exe
