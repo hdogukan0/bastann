@@ -8,7 +8,8 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Turkish");
-	ofstream dosya("test.txt");
+	//dosyaya bilgi giriþi yapma
+	/*ofstream dosya("test.txt", ios::app); // ios::app dosyanýn üzreine geçmiþ veriyi silmeden yazdýrmamýzý saðlar
 
 	string s1, s2, s3, s4; // 4 adet string türünde deðiþken tanýdým
 	char bosluk = ' ';  // bosluk býrakmak için kullanýcaz
@@ -38,6 +39,37 @@ int main()
 	// dosyayý kapattýk
 	dosya.close();
 
+	*/
+
+	// Dosyayý ekrana yazdýrma
+	int id;
+	string ad;
+	string soyad;
+	string bolum;
+	//string dosya_adi;
+	char bosluk = ' ';
+	char satir;
+
+
+	//cout << "Okutmak istediðiniz dosyanýn adýný yazýnýz : "; //sürekli dosya adýný konsoldan girmemek için kapattým.
+	//cin >> dosya_adi; cout << endl;
+	ifstream dosya("bilgiler.txt");
+
+	if (!dosya)
+	{
+		cout << "Dosya Açýlýrken Hata Oluþtu Hata Kodu : " << dosya.rdstate() << endl;
+		return 1;
+	}
+
+
+	while (!dosya.eof())
+	{
+		dosya >> id >> ad >> soyad >> bolum;
+		cout << id << bosluk << ad << bosluk << soyad << bosluk << bolum << endl;
+
+	}
+
+	dosya.close();
 
 
 	return 0;

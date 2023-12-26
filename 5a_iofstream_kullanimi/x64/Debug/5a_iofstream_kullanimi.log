@@ -1,2 +1,3 @@
 ﻿  iofstream_kullanimi.cpp
+C:\Users\doguk\Desktop\Bastan\bastann\5a_iofstream_kullanimi\iofstream_kullanimi.cpp(51,7): warning C4101: 'satir': yerel değişken başvurusu kaldırıldı
   5a_iofstream_kullanimi.vcxproj -> C:\Users\doguk\Desktop\Bastan\bastann\x64\Debug\5a_iofstream_kullanimi.exe
